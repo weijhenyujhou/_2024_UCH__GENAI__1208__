@@ -1,0 +1,18 @@
+enter = input("輸入1~7數字")
+
+if enter == "1":
+    print("星期一")
+elif enter == "2":
+    print("星期二")
+elif enter == "3":
+    print("星期三")    
+elif enter == "4":
+    print("星期四")
+elif enter == "5":
+    print("星期五")
+elif enter == "6":
+    print("星期六")
+elif enter == "7":
+    print("星期日")
+else:
+    print("輸入錯誤")
