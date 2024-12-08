@@ -6,3 +6,7 @@
 
 Name: eecwan101
 PWD: odrsowr3
+
+AI tools:
+1. claude
+2. cursor
