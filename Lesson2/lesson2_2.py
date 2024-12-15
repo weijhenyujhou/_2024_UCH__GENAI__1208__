@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding=utf-8 -*-
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # 
 __author__ = "柯博文老師 Powen Ko, www.powenko.com"
-import tensorflow as tf
-import numpy as np
+import tensorflow as tf 
+import numpy as np # 
 
 x1 = np.random.random((500, 1))
 x2 = np.random.random((500, 1))+1
