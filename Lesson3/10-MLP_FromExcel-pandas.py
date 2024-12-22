@@ -7,9 +7,6 @@ __author__ = "柯博文老師 Powen Ko, www.powenko.com"
 #from sklearn import datasets
 from sklearn.model_selection import train_test_split
 import tensorflow as tf
-import numpy as np
-
-
 
 
 import pandas as pd #讀取資料
@@ -54,7 +51,7 @@ model.compile(optimizer='adam',
     loss=tf.keras.losses.categorical_crossentropy,
     metrics=['accuracy'])
 model.fit(x_train, y_train2,
-          epochs=20000,
+          epochs=2000,
           batch_size=64)
 
 #測試
