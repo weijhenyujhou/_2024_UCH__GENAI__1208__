@@ -9,7 +9,7 @@ import os.path
 from os import path
 
 import tensorflow_datasets as tfds
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split 
 print(tfds.list_builders())
 
 import tensorflow_datasets as tfds   # 1.3.2
