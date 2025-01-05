@@ -96,7 +96,7 @@ train_dataset = filtered_train_data.map(preprocess_audio).batch(32).prefetch(tf.
 test_dataset = filtered_test_data.map(preprocess_audio).batch(32).prefetch(tf.data.AUTOTUNE)
 
 
-# 模型構建
+# 模型構建(CNN)
 model = models.Sequential([
     layers.Conv2D(32, (3, 3), activation='relu', input_shape=(40, 128, 1)),
     layers.MaxPooling2D((2, 2)),
