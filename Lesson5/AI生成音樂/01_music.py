@@ -20,6 +20,7 @@ s.analyze('key')
 s.show()
 """
 
+
 def train_network():
     """ Train a Neural Network to generate music """
     notes = get_notes()
@@ -37,10 +38,10 @@ def get_notes():
             midi = converter.parse(file)
             print("Parsing %s" % file)
             notes_to_parse = None
-            try: # file has instrument parts
+            try:  # file has instrument parts
                 s2 = instrument.partitionByInstrument(midi)
                 notes_to_parse = s2.parts[0].recurse()
-            except: # file has notes in a flat structure
+            except:  # file has notes in a flat structure
                 notes_to_parse = midi.flat.notes
 
             for element in notes_to_parse:
@@ -53,7 +54,6 @@ def get_notes():
             pickle.dump(notes, filepath)
 
     return notes
-
 
 
 if __name__ == '__main__':
